@@ -10,7 +10,6 @@
 .maxbox .left {
     width: 220rpx;
     height: 150rpx;
-    background-color: red;
 }
 
 .maxbox .left image {

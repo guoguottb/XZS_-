@@ -1,7 +1,7 @@
 <view class="maxbox">
 <!-- 左侧pic -->
   <view class="left">
-  <image src="{{pic}}" mode="aspectFill"/>
+  <image src="{{picurl}}" mode="aspectFill"/>
   </view>
   <!-- 右侧content -->
   <view class="right">

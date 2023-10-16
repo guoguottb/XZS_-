@@ -7,18 +7,23 @@ Component({
     properties: {
         time: {
             type: String,
+            value: ""
         },
         pageView: {
             type: String,
+            value: ""
         },
         name: {
             type: String,
+            value: ""
         },
         content: {
             type: String,
+            value: ""
         },
-        pic: {
+        picurl: {
             type: String,
+            value: ""
         }
     },
 

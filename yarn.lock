@@ -4,5 +4,10 @@
 
 "@vant/weapp@^1.11.1":
   version "1.11.1"
-  resolved "https://registry.npmmirror.com/@vant/weapp/-/weapp-1.11.1.tgz#26d3196751bb3602b2801554bac346d42d2e88b7"
+  resolved "https://registry.npmmirror.com/@vant/weapp/-/weapp-1.11.1.tgz"
   integrity sha512-2QddSq3MsozbTBAgEmW1rhzsEJNWPF2VS427M5pOOn0a7/f6lW+tymwdTcOQCzQONavhFwBv6Lebbs/UjE3Yig==
+
+dayjs@^1.11.10:
+  version "1.11.10"
+  resolved "https://registry.npmmirror.com/dayjs/-/dayjs-1.11.10.tgz"
+  integrity sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==

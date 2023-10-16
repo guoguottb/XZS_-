@@ -1,7 +1,8 @@
 <view class="maxbox">
   <headerSearch></headerSearch>
   <myBanner></myBanner>
-  <myNavigator></myNavigator>
+  <!-- 茶品类型 -->
+  <myNavigator naveList="{{TeaType}}"></myNavigator>
   <!-- 茶美文化馆简介 -->
   <pblTitle en="INTBODUCE" cn="茶美文化馆简介"></pblTitle>
   <!-- 文本内容 -->
@@ -13,7 +14,7 @@
   <!-- news 品牌资讯 -->
   <pblTitle en="NEWS" cn="品牌资讯"></pblTitle>
   <!-- 品牌资讯list -->
-  <BrandInformation wx:for="{{article}}" wx:key="id" pic="{{item.pic}}" content="{{item.content}}" time="{{item.time}}" pageView="{{item.pageView}}" name="{{item.name}}"></BrandInformation>
+  <BrandInformation wx:for="{{article}}" wx:key="_id" picurl="{{item.picurl}}" content="{{item.title}}" time="{{item.publish_date}}" pageView="{{item.view_count}}" name="{{item.author}}"></BrandInformation>
   <!-- 底部版权 -->
   <footCopyright></footCopyright>
   <!-- 客服按钮 -->
