@@ -1,0 +1,16 @@
+<view class="out">
+  <swiper autoplay circular indicator-dots indicator-active-color="#BBA069" indicator-color="rgba(255,255,255,.3)" interval="3000">
+    <swiper-item>
+      <image src="/static/images/banner0.jpg" mode=""></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/banner1.jpg" mode=""></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/banner2.jpg" mode=""></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/banner3.jpg" mode=""></image>
+    </swiper-item>
+  </swiper>
+</view>

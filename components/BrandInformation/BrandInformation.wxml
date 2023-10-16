@@ -1,0 +1,30 @@
+<view class="maxbox">
+<!-- 左侧pic -->
+  <view class="left">
+  <image src="{{pic}}" mode="aspectFill"/>
+  </view>
+  <!-- 右侧content -->
+  <view class="right">
+    <view class="top">{{content}}</view>
+    <view class="bottom">
+      <view class="time">
+        <view class="text">
+          <van-icon name="clock-o" />
+          <text>{{time}}</text>
+        </view>
+      </view>
+      <view class="pageView">
+        <view class="text">
+          <van-icon name="eye-o" />
+          <text>{{pageView}}</text>
+        </view>
+      </view>
+      <view class="name">
+        <view class="text">
+          <van-icon name="manager-o" />
+          <text>{{name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

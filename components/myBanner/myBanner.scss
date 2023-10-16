@@ -1,0 +1,12 @@
+.out {
+    padding-top: 30rpx;
+    text-align: center;
+    swiper {
+        height: 460rpx;
+        swiper-item image {
+            width: 690rpx;
+            height: 460rpx;
+            border-radius: 30rpx;
+        }
+    }
+}

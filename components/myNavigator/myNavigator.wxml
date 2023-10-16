@@ -1,0 +1,12 @@
+<view class="maxbox">
+  <scroll-view scroll-x>
+    <navigator url="" wx:for="{{arr}}" wx:key="id" class="item">
+      <view class="pic">
+        <image src="/static/images/navicon{{index + 1}}.png" mode=""></image>
+      </view>
+      <view class="text">
+        <text>{{item.title}}</text>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

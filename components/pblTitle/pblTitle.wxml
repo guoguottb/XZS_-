@@ -1,0 +1,7 @@
+<view class="maxbox">
+  <view class="en">
+  <text>{{en}}</text>
+  </view>
+  <view class="cn">{{cn}}</view>
+  <view class="line"></view>
+</view>

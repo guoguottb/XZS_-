@@ -1,0 +1,5 @@
+  <view class="service">
+    <button open-type="contact" class="btn"></button>
+    <image src="/static/images/kefu.png" mode="aspectFill" class="pic"/>
+    <view class="line"></view>
+  </view>

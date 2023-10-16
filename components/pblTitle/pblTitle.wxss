@@ -1,0 +1,25 @@
+.maxbox {
+    text-align: center;
+    padding-top: 50rpx;
+}
+
+.maxbox .en {
+    font-size: 80rpx;
+    color: var(--subColor);
+    opacity: .6;
+}
+
+.maxbox .cn {
+    position: relative;
+    font-size: 50rpx;
+    font-weight: 600;
+    top: -46rpx;
+}
+
+.maxbox .line {
+    width: 80rpx;
+    position: relative;
+    left: 50%;
+    border-bottom: 6rpx solid var(--greyColor);
+    transform: translate(-40rpx);
+}

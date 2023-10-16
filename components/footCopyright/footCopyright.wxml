@@ -1,0 +1,6 @@
+
+  <view class="footCopyright">
+    <view class="Copyright">Copyright @ 2023 版权所有</view>
+    <view class="company">克莱因蓝有限公司所有</view>
+    <view class="location">河南省安阳市安阳县韩陵镇</view>
+  </view>

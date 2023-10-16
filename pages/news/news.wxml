@@ -1,0 +1,4 @@
+<view class="maxbox">
+  <!-- 顶部搜索框 -->
+  <headerSearch></headerSearch>
+</view>

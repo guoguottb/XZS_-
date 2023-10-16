@@ -1,0 +1,11 @@
+.topSearch {
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2rpx solid var(--subColor);
+    padding: 0 10rpx;
+    image {
+        height: 72rpx;
+    }
+}
