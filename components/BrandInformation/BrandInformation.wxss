@@ -12,7 +12,7 @@
     height: 150rpx;
 }
 
-.maxbox .left image {
+.maxbox .left .img {
     width: 100%;
     height: 100%;
 }
@@ -44,6 +44,6 @@
     overflow: hidden;
 }
 
-.maxbox .right .bottom van-icon {
+.maxbox .right .bottom .vanIcon {
     margin-right: 6rpx;
 }

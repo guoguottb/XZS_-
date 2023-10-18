@@ -1,7 +1,7 @@
 <view class="maxbox">
 <!-- 左侧pic -->
   <view class="left">
-  <image src="{{picurl}}" mode="aspectFill"/>
+  <image src="{{picurl}}" class="img" mode="aspectFill"/>
   </view>
   <!-- 右侧content -->
   <view class="right">
@@ -9,19 +9,19 @@
     <view class="bottom">
       <view class="time">
         <view class="text">
-          <van-icon name="clock-o" />
+          <van-icon class="vanIcon" name="clock-o" />
           <text>{{time}}</text>
         </view>
       </view>
       <view class="pageView">
         <view class="text">
-          <van-icon name="eye-o" />
+          <van-icon  class="vanIcon" name="eye-o" />
           <text>{{pageView}}</text>
         </view>
       </view>
       <view class="name">
         <view class="text">
-          <van-icon name="manager-o" />
+          <van-icon  class="vanIcon" name="manager-o" />
           <text>{{name}}</text>
         </view>
       </view>

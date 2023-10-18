@@ -1,8 +1,8 @@
 <view class="maxbox">
-  <scroll-view scroll-x>
+  <scroll-view class="scrView" scroll-x>
     <navigator url="" wx:for="{{naveList}}" wx:key="_id" class="item">
       <view class="pic">
-        <image src="{{item.icon}}" mode=""></image>
+        <image src="{{item.icon}}" class="img" mode=""></image>
       </view>
       <view class="text">
         <text>{{item.classname}}</text>
