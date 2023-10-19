@@ -45,7 +45,7 @@ Page({
             }, )
             res.data.data.forEach(item => {
                 item.view_count = formatNum(item.view_count)
-                item.publish_date = formatTime(item.publish_date)
+                item.publish_date = formatTime(item.publish_date, 5)
             })
             this.setData({
                 article: res.data.data

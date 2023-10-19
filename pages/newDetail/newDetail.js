@@ -11,7 +11,8 @@ Page({
      */
     data: {
         options: {},
-        articleDetail: {}
+        articleDetail: {},
+        detail: false
     },
 
     /**
@@ -33,8 +34,13 @@ Page({
             data.publish_date = formatTime(data.publish_date, 7)
             data.view_count = formatNum(data.view_count)
             data.content = data.content.replace(/<p>/g, "<p class='pstyle'>")
+            data.content = data.content.replace(/<img/g, "<img class='imgstyle'")
+            wx.setNavigationBarTitle({
+                title: data.title,
+            })
             this.setData({
-                articleDetail: data
+                articleDetail: data,
+                detail: true
             })
             console.log(this.data.articleDetail, "articleDetail")
         } catch (error) {
@@ -87,6 +93,16 @@ Page({
      * 用户点击右上角分享
      */
     onShareAppMessage() {
-
+        return {
+            title: this.data.articleDetail.title,
+            path: `/pages/newDetail/newDetail?id=${this.data.options.id}`
+        }
+    },
+    // 转发到微信朋友圈
+    onShareTimeline() {
+        return {
+            title: this.data.articleDetail.title,
+            path: `/pages/newDetail/newDetail?id=${this.data.options.id}`
+        }
     }
 })

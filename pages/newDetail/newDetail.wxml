@@ -1,21 +1,24 @@
-<view class="detail">
+<view wx:if="{{!detail}}" style="padding:40rpx 0">
+  <van-skeleton title row="5" />
+</view>
+<view class="detail" wx:else>
   <view class="title">{{articleDetail.title}}</view>
   <view class="info">
-    <view class="left">      
-      <text>{{articleDetail.publish_date}}</text> 
+    <view class="left">
+      <text>{{articleDetail.publish_date}}</text>
       <text>{{articleDetail.author}}</text>
       <text>{{articleDetail.view_count}}阅读</text>
     </view>
-    <view class="right">
+    <view class="right" bind:tap="onShareAppMessage">
       <van-icon name="share-o" size="18" />
       <text>分享</text>
       <button open-type="share" class="share" size="mini">
-      享
+        享
       </button>
     </view>
   </view>
   <view class="content">
- <rich-text nodes="{{articleDetail.content}}"></rich-text>
+    <rich-text nodes="{{articleDetail.content}}"></rich-text>
   </view>
   <view class="copyright">
     <view class="top">免责声明</view>
