@@ -14,7 +14,7 @@
   <!-- news 品牌资讯 -->
   <pblTitle en="NEWS" cn="品牌资讯"></pblTitle>
   <!-- 品牌资讯list -->
-  <BrandInformation wx:for="{{article}}" wx:key="_id" picurl="{{item.picurl}}" content="{{item.title}}" time="{{item.publish_date}}" pageView="{{item.view_count}}" name="{{item.author}}"></BrandInformation>
+  <BrandInformation wx:for="{{article}}" wx:key="_id" article="{{item}}"></BrandInformation>
   <!-- 底部版权 -->
   <footCopyright></footCopyright>
   <!-- 客服按钮 -->

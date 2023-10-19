@@ -5,25 +5,8 @@ Component({
      * 组件的属性列表
      */
     properties: {
-        time: {
-            type: String,
-            value: ""
-        },
-        pageView: {
-            type: String,
-            value: ""
-        },
-        name: {
-            type: String,
-            value: ""
-        },
-        content: {
-            type: String,
-            value: ""
-        },
-        picurl: {
-            type: String,
-            value: ""
+        article: {
+            type: Object,
         }
     },
 

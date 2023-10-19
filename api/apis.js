@@ -11,8 +11,16 @@ function getTeaTypeNavApi() {
 }
 // 获取品牌资讯s
 export const getBrandInformationApi = (data) => {
+        return request({
+            url: "/news/get",
+            method: "POST",
+            data,
+        })
+    }
+    // 获取新闻详情
+export function getNewsDetailApi(data) {
     return request({
-        url: "/news/get",
+        url: "/news/detail",
         method: "POST",
         data,
     })

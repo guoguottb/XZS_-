@@ -1,5 +1,11 @@
-import { formatNum, formatMonthDay } from '../../utils/filter.js'
-import { getTeaTypeNavApi, getBrandInformationApi } from "../../api/apis"
+import {
+    formatNum,
+    formatTime
+} from '../../utils/filter.js'
+import {
+    getTeaTypeNavApi,
+    getBrandInformationApi
+} from "../../api/apis"
 Page({
 
     /**
@@ -39,7 +45,7 @@ Page({
             }, )
             res.data.data.forEach(item => {
                 item.view_count = formatNum(item.view_count)
-                item.publish_date = formatMonthDay(item.publish_date)
+                item.publish_date = formatTime(item.publish_date)
             })
             this.setData({
                 article: res.data.data
