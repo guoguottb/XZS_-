@@ -1,18 +1,32 @@
 // pages/classify/classify.js
+import { getTeaTypeNavApi } from "../../api/apis"
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        active: "标签 1"
+        active: 0,
+        navList: []
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
+        this.getTeaTypeNav()
+    },
+    // 获取茶品分类
+    async getTeaTypeNav() {
+        try {
+            const res = await getTeaTypeNavApi()
+            this.setData({
+                navList: res.data.data
+            })
+            console.log(this.data.navList)
+        } catch (error) {
 
+        }
     },
     onChange() {},
     /**

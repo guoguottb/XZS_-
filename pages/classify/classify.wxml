@@ -6,6 +6,10 @@
     <image class="pic" src="/static/images/teaBanner.jpg" mode="aspectFill" />
   </view>
   <view class="nav">
+    <van-tabs active="{{ active }}" 
+    color="#BDA066" title-active-color="#BDA066" bind:change="onChange">
+      <van-tab title="{{item.classname}}" wx:for="{{navList}}" wx:key="_id">{{item.classname}}</van-tab>
+    </van-tabs>
   </view>
   <!-- 底部版权 -->
   <footCopyright></footCopyright>
