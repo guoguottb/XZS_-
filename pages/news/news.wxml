@@ -9,7 +9,9 @@
     </view>
     <!-- 底部loading / 提示 -->
     <view class="footHint">
-      <van-loading size="24px" class="load" wx:if="{{articleLoading}}">加载中...</van-loading>
+      <view class="loading" wx:if="{{articleLoading}}">
+        <van-loading size=" 24px" class="load">加载中...</van-loading>
+      </view>
       <view class="noMore" wx:else>
         暂时没有更多了~
       </view>

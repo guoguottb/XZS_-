@@ -1,0 +1,35 @@
+<view class="product">
+  <view class="pic">
+    <image class="image" mode="widthFix" src="{{product.picpath}}"></image>
+  </view>
+  <view class="text">
+    <view class="title">{{product.title}}</view>
+    <view class="info">
+
+      <view class="row">
+        <view class="left"><text space="emsp">货 号：</text></view>
+        <view class="right">{{product.pronum}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left"><text space="emsp">等 级：</text></view>
+        <view class="right">{{product.grade}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left"><text space="emsp">年 份：</text></view>
+        <view class="right">{{product.year}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left">净含量：</view>
+        <view class="right">{{product.weight}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left">零售价：</view>
+        <view class="right">{{product.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

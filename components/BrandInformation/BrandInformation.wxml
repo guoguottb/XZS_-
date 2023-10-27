@@ -1,7 +1,7 @@
 <navigator url="/pages/newDetail/newDetail?id={{article._id}}" class="maxbox">
-<!-- 左侧pic -->
+  <!-- 左侧pic -->
   <view class="left">
-  <image src="{{article.picurl}}" class="img" mode="aspectFill"/>
+    <image src="{{article.picurl}}" class="img" mode="aspectFill" />
   </view>
   <!-- 右侧content -->
   <view class="right">
@@ -15,13 +15,13 @@
       </view>
       <view class="pageView">
         <view class="text">
-          <van-icon  class="vanIcon" name="eye-o" />
+          <van-icon class="vanIcon" name="eye-o" />
           <text>{{article.view_count}}</text>
         </view>
       </view>
       <view class="name">
         <view class="text">
-          <van-icon  class="vanIcon" name="manager-o" />
+          <van-icon class="vanIcon" name="manager-o" />
           <text>{{article.author}}</text>
         </view>
       </view>

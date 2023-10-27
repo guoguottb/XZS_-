@@ -25,3 +25,19 @@ export function getNewsDetailApi(data) {
         data,
     })
 }
+// 根据茶品id获取产品详情
+export function getProductDetailApi(data) {
+    return request({
+        url: "/product/getlist",
+        method: "POST",
+        data,
+    })
+}
+//获取产品详情
+export function queryProductDetail(data) {
+    return request({
+        url: "/product/detail",
+        method: "POST",
+        data
+    })
+}

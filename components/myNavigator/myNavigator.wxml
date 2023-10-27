@@ -1,6 +1,6 @@
 <view class="maxbox">
   <scroll-view class="scrView" scroll-x>
-    <navigator url="" wx:for="{{naveList}}" wx:key="_id" class="item">
+    <navigator url="/pages/classify/classify?index={{index}}" open-type="reLaunch" wx:for="{{naveList}}" wx:key="_id" class="item">
       <view class="pic">
         <image src="{{item.icon}}" class="img" mode=""></image>
       </view>
