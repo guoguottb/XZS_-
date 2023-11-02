@@ -20,12 +20,12 @@ Page({
      * 生命周期函数--监听页面加载
      */
     async onLoad(options) {
-        console.log(options)
+        console.log(options, "options")
         this.setData({
-            active: Number(options.index)
+            active: Object.keys(options).length === 0 ? 0 : Number(options.index)
         })
         await this.getTeaTypeNav()
-        this.getProductDetailApi()
+        this.getProductDetail()
     },
     // 获取茶品分类
     async getTeaTypeNav() {
@@ -40,7 +40,7 @@ Page({
         }
     },
     // 根据茶类id获取产品详情
-    async getProductDetailApi(size = 0) {
+    async getProductDetail(size = 0) {
         try {
             // 获取数据的时候显示loading
             this.data.loading = true
@@ -75,7 +75,7 @@ Page({
                 isData: false
             })
             // 调用接口获取商品茶
-        this.getProductDetailApi()
+        this.getProductDetail()
     },
     /**
      * 生命周期函数--监听页面初次渲染完成
@@ -115,7 +115,7 @@ Page({
      */
     onReachBottom() {
         if (this.data.isData) return console.log("暂无更多数据了")
-        this.getProductDetailApi()
+        this.getProductDetail()
     },
 
     /**
