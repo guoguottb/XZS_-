@@ -36,7 +36,7 @@ Page({
             })
             console.log(this.data.navList)
         } catch (error) {
-
+            console.log()
         }
     },
     // 根据茶类id获取产品详情
